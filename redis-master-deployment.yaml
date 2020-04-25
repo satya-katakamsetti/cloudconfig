@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metdata:
+metadata:
   name: redis-master
   labels:
     app: redis
@@ -12,7 +12,7 @@ spec:
       role: master
       tier: backend
   template:
-    metdata:
+    metadata:
       labels:
         app: redis
         role: master
