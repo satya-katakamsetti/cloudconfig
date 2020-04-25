@@ -15,13 +15,13 @@ spec:
       labels:
         app: guestbook
         tier: frontend
-    sepc:
-      containers:
-        - name: php-redis
-          image: gcr.io/google_samples/gb-frontend:v4
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-          ports:
-            - containerPort: 80
+    spec:
+     containers:
+       - name: php-redis
+       image:  gcr.io/google_samples/gb-frontend:v4
+       resources:
+        requests:
+         cpu: 100m
+         memory: 100Mi
+       ports:
+         containerPort:  80
